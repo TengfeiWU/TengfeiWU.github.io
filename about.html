@@ -4,6 +4,26 @@
   <meta charset="UTF-8">
   <title>关于我</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* 教育经历专用样式 */
+    .education-item {
+      display: flex;
+      justify-content: space-between; /* 左右两端对齐 */
+      margin-bottom: 5px;
+    }
+
+    .school-name {
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      text-align: left;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -11,18 +31,33 @@
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="research.html">Research</a>
       <a href="cv.html">CV</a>
     </nav>
   </header>
 
   <main>
-    <h2>教育经历</h2>
-    <p>厦门大学 · 自动化专业 · 本科在读</p>
+    <div class="section-title">教育经历</div>
 
-    <h2>研究兴趣</h2>
+    <div class="education-item">
+      <span class="school-name">厦门大学, 厦门, 中国</span>
+      <span>Sept 2023 -</span>
+    </div>
+
+    <div class="education-item">
+      <span>主修专业 <strong>自动化</strong></span>
+      <span>Cumulative GPA: 3.62/4.00</span>
+    </div>
+
+    <div class="education-item">
+      <span>辅修专业 <strong>金融学(数理)</strong></span>
+      <span>Cumulative GPA: 3.60/4.00</span>
+    </div>
+
+    <h3>研究兴趣</h3>
     <p>机器学习、优化、智能控制</p>
 
-    <h2>联系方式</h2>
+    <h3>联系方式</h3>
     <p>Email: xiaoming@example.com</p>
     <p>GitHub: <a href="https://github.com/username">github.com/username</a></p>
   </main>
